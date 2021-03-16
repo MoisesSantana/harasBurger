@@ -8,7 +8,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: #832B00;
+    background-color: #723022;
     color: #FAFFEB;
     font-family: 'Poppins', sans-serif;
   }
