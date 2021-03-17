@@ -12,35 +12,57 @@ const Header: React.FC = () => (
     <div>
       <h2>Promoções</h2>
       {
-        promocoes.map((objeto) => {
-          const {
-            nome,
-            preco,
-          } = objeto;
-          return (
-            <div key={ nome }>
-              <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
-            </div>
-          );
-        })
+        promocoes.map(({ nome, preco }) => (
+          <div key={ nome }>
+            <p>{ nome }</p>
+            <span>R${ preco.toFixed(2) }</span>
+          </div>
+        ))
       }
     </div>
     <div>
       <h2>Trios</h2>
-
+      {
+        trios.map(({ nome, preco }) => (
+          <div key={ nome }>
+            <p>{ nome }</p>
+            <span>R${ preco.toFixed(2) }</span>
+          </div>
+        ))
+      }
     </div>
     <div>
       <h2>Sanduíches</h2>
-
+      {
+        sanduiches.map(({ nome, preco }) => (
+          <div key={ nome }>
+            <p>{ nome }</p>
+            <span>R${ preco.toFixed(2) }</span>
+          </div>
+        ))
+      }
     </div>
     <div>
       <h2>Bebidas</h2>
-
+      {
+        bebidas.map(({ nome, preco }) => (
+          <div key={ nome }>
+            <p>{ nome }</p>
+            <span>R${ preco.toFixed(2) }</span>
+          </div>
+        ))
+      }
     </div>
     <div>
       <h2>Porções</h2>
-
+      {
+        porcao.map(({ nome, preco }) => {
+          <div key={ nome }>
+            <p>{ nome }</p>
+            <span>R${ preco.toFixed(2) }</span>
+          </div>
+        })
+      }
     </div>
   </section>
 );
