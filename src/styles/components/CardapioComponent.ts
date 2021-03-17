@@ -36,6 +36,24 @@ export const ElementoContainer = style.div`
   }
 
   & div:last-child {
-    gap: 10px;
+    justify-content: space-around;
+  }
+
+  button {
+    border: none;
+    color: #FAFFEB;
+    font-weight: 800;
+    padding: 10px 30px;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  button:first-child {
+    background-color: #27AE60;
+    border-radius: 10px 0 0 0;
+  }
+
+  button:last-child {
+    background-color: #F77800;
+    border-radius: 0 0 10px 0;
   }
 `;

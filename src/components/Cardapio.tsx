@@ -17,14 +17,22 @@ const Cardapio: React.FC = () => (
       <h2>Promoções</h2>
       {
         promocoes.map(({ nome, preco }) => (
-          <ElementoContainer key={ nome }>
+          <ElementoContainer key={nome}>
             <div>
               <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
+              <span>{`R$${preco.toFixed(2)}`}</span>
             </div>
             <div>
-              <button>Adicionar</button>
-              <button>Detalhes</button>
+              <button
+                type="button"
+              >
+                Adicionar
+              </button>
+              <button
+                type="button"
+              >
+                Detalhes
+              </button>
             </div>
           </ElementoContainer>
         ))
@@ -34,14 +42,22 @@ const Cardapio: React.FC = () => (
       <h2>Trios</h2>
       {
         trios.map(({ nome, preco }) => (
-          <ElementoContainer key={ nome }>
+          <ElementoContainer key={nome}>
             <div>
               <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
+              <span>{`R$${preco.toFixed(2)}`}</span>
             </div>
             <div>
-              <button>Adicionar</button>
-              <button>Detalhes</button>
+              <button
+                type="button"
+              >
+                Adicionar
+              </button>
+              <button
+                type="button"
+              >
+                Detalhes
+              </button>
             </div>
           </ElementoContainer>
         ))
@@ -51,14 +67,22 @@ const Cardapio: React.FC = () => (
       <h2>Sanduíches</h2>
       {
         sanduiches.map(({ nome, preco }) => (
-          <ElementoContainer key={ nome }>
+          <ElementoContainer key={nome}>
             <div>
               <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
+              <span>{`R$${preco.toFixed(2)}`}</span>
             </div>
             <div>
-              <button>Adicionar</button>
-              <button>Detalhes</button>
+              <button
+                type="button"
+              >
+                Adicionar
+              </button>
+              <button
+                type="button"
+              >
+                Detalhes
+              </button>
             </div>
           </ElementoContainer>
         ))
@@ -68,14 +92,22 @@ const Cardapio: React.FC = () => (
       <h2>Bebidas</h2>
       {
         bebidas.map(({ nome, preco }) => (
-          <ElementoContainer key={ nome }>
+          <ElementoContainer key={nome}>
             <div>
               <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
+              <span>{`R$${preco.toFixed(2)}`}</span>
             </div>
             <div>
-              <button>Adicionar</button>
-              <button>Detalhes</button>
+              <button
+                type="button"
+              >
+                Adicionar
+              </button>
+              <button
+                type="button"
+              >
+                Detalhes
+              </button>
             </div>
           </ElementoContainer>
         ))
@@ -85,14 +117,22 @@ const Cardapio: React.FC = () => (
       <h2>Porções</h2>
       {
         porcao.map(({ nome, preco }) => (
-          <ElementoContainer key={ nome }>
+          <ElementoContainer key={nome}>
             <div>
               <p>{ nome }</p>
-              <span>R${ preco.toFixed(2) }</span>
+              <span>{`R$${preco.toFixed(2)}`}</span>
             </div>
             <div>
-              <button>Adicionar</button>
-              <button>Detalhes</button>
+              <button
+                type="button"
+              >
+                Adicionar
+              </button>
+              <button
+                type="button"
+              >
+                Detalhes
+              </button>
             </div>
           </ElementoContainer>
         ))
