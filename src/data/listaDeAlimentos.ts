@@ -394,6 +394,6 @@ export const filtros = [
   },
   {
     nome: 'Promoção',
-    tags: ['promocao']
-  }
+    tags: ['promocao'],
+  },
 ];
