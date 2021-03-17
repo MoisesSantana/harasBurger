@@ -362,3 +362,11 @@ export const bebidas = [
     tags: ['bebida', 'refrigerante', 'coca-cola', 'lata'],
   },
 ];
+
+export const promocoes = [
+  {
+    nome: 'Hamburguer dobrado',
+    preco: 13,
+    tags: ['sanduiche', 'carne', 'promocao'],
+  },
+];
