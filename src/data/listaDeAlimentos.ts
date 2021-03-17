@@ -365,7 +365,7 @@ export const bebidas = [
 
 export const promocoes = [
   {
-    nome: 'Hamburguer dobrado',
+    nome: 'Hamburguer em Dobro',
     preco: 13,
     tags: ['sanduiche', 'carne', 'promocao'],
   },

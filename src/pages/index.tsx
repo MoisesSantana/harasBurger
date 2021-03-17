@@ -10,9 +10,7 @@ const Home: React.FC = () => (
       <title>Hara&apos;s Burger</title>
     </Head>
     <Header />
-    <div>
-      <Cardapio />
-    </div>
+    <Cardapio />
     <div>
       oi
     </div>
