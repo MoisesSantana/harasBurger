@@ -11,7 +11,7 @@ export const sanduiches = [
       'salada',
       'molho',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Talentos',
@@ -28,7 +28,7 @@ export const sanduiches = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Ambicioso',
@@ -45,7 +45,7 @@ export const sanduiches = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Zorro',
@@ -77,7 +77,7 @@ export const sanduiches = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Impetuoso',
@@ -110,7 +110,7 @@ export const sanduiches = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Pegasus',
@@ -139,7 +139,7 @@ export const sanduiches = [
       'cebola',
       'dobro cheddar',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
   {
     nome: 'Touro Bandido',
@@ -151,7 +151,7 @@ export const sanduiches = [
       'cebola',
       'dobro cheddar',
     ],
-    tags: ['sanduiche', 'carne'],
+    tags: ['sanduiche'],
   },
 ];
 
@@ -169,7 +169,7 @@ export const trios = [
       'salada',
       'molho',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Talentos',
@@ -187,7 +187,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Ambicioso',
@@ -205,7 +205,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Zorro',
@@ -222,7 +222,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'frango', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Elegante',
@@ -239,7 +239,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Impetuoso',
@@ -256,7 +256,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'frango', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Cavalo de Troia',
@@ -274,7 +274,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Pegasus',
@@ -292,7 +292,7 @@ export const trios = [
       'cheddar',
       'molho especial',
     ],
-    tags: ['trio', 'sanduiche', 'frango', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Guloso',
@@ -305,7 +305,7 @@ export const trios = [
       'cebola',
       'dobro cheddar',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
   {
     nome: 'Touro Bandido',
@@ -318,7 +318,7 @@ export const trios = [
       'cebola',
       'dobro cheddar',
     ],
-    tags: ['trio', 'sanduiche', 'carne', 'batata', 'bebida', 'copo'],
+    tags: ['trio', 'sanduiche'],
   },
 ];
 
@@ -326,17 +326,17 @@ export const porcao = [
   {
     nome: 'Porção pequena',
     preco: 10,
-    tags: ['porção', 'batata'],
+    tags: ['porção'],
   },
   {
     nome: 'Porção média',
     preco: 15,
-    tags: ['porção', 'batata'],
+    tags: ['porção'],
   },
   {
     nome: 'Porção grande',
     preco: 20,
-    tags: ['porção', 'batata'],
+    tags: ['porção'],
   },
 ];
 
@@ -344,22 +344,22 @@ export const bebidas = [
   {
     nome: 'Guaraná Antarctica 1L',
     preco: 6,
-    tags: ['bebida', 'garrafa', 'guarana', 'refrigerante'],
+    tags: ['bebida'],
   },
   {
     nome: 'Guaracamp',
     preco: 2,
-    tags: ['bebida', 'guarana', 'copo'],
+    tags: ['bebida'],
   },
   {
     nome: 'Coca-Cola 1,5L',
     preco: 7,
-    tags: ['bebida', 'refrigerante', 'coca-cola', 'garrafa'],
+    tags: ['bebida'],
   },
   {
     nome: 'Coca-Cola lata 350ml',
     preco: 5,
-    tags: ['bebida', 'refrigerante', 'coca-cola', 'lata'],
+    tags: ['bebida'],
   },
 ];
 
@@ -368,5 +368,32 @@ export const promocoes = [
     nome: 'Hamburguer em Dobro',
     preco: 13,
     tags: ['sanduiche', 'carne', 'promocao'],
+  },
+];
+
+export const filtros = [
+  {
+    nome: 'Todos',
+    tags: ['sanduiche', 'trio', 'porcao', 'bebida', 'promocao'],
+  },
+  {
+    nome: 'Sanduíche',
+    tags: ['sanduiche', 'trio'],
+  },
+  {
+    nome: 'Trios',
+    tags: ['trio'],
+  },
+  {
+    nome: 'Porção',
+    tags: ['porcao'],
+  },
+  {
+    nome: 'Bebidas',
+    tags: ['bebida'],
+  },
+  {
+    nome: 'Promoção',
+    tags: ['promocao'],
   },
 ];
