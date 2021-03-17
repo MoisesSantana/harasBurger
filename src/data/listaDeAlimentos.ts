@@ -373,11 +373,11 @@ export const promocoes = [
 
 export const filtros = [
   {
-    nome: 'Limpar filtro',
+    nome: 'Todos',
     tags: ['sanduiche', 'trio', 'porcao', 'bebida', 'promocao'],
   },
   {
-    nome: 'Sanduiche',
+    nome: 'Sanduíche',
     tags: ['sanduiche', 'trio'],
   },
   {
