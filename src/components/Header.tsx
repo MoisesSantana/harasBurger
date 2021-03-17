@@ -15,6 +15,7 @@ const Header: React.FC = () => (
     <a
       href="https://api.whatsapp.com/send?1=pt_BRphone=5521973096257&text=Boa noite! Poderia me ajudar?"
       target="_blank"
+      rel="noopener noreferrer"
     >
       Não consigo fazer meu pedido
     </a>
