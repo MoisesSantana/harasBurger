@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { HarasContext } from '../contexts/HarasContext';
 import { filtros } from '../data/listaDeAlimentos';
 import FiltroContainer from '../styles/components/FiltroComponent';
 
 const Filtro: React.FC = () => {
-  const [filtroAtual, setFiltroAtual] = useState('Todos');
+  const { setFiltroAtual } = useContext(HarasContext);
 
   return (
     <FiltroContainer
       name="filtra-categoria"
       id="filtra-categoria"
+      onChange={({ target: { value } }) => setFiltroAtual(value)}
     >
       {
         filtros.map(({ nome }) => (
@@ -22,7 +24,6 @@ const Filtro: React.FC = () => {
       }
     </FiltroContainer>
   );
-}
-
+};
 
 export default Filtro;
