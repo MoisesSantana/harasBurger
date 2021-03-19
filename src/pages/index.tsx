@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Cardapio from '../components/Cardapio';
 import Filtro from '../components/Filtro';
+import BotaoCarrinho from '../components/BotaoCarrinho';
 import MainContainer from '../styles/pages/homePage';
 
 const Home: React.FC = () => (
@@ -13,9 +14,7 @@ const Home: React.FC = () => (
     <Header />
     <Filtro />
     <Cardapio />
-    <div>
-      oi
-    </div>
+    <BotaoCarrinho />
   </MainContainer>
 );
 
