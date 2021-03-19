@@ -1,27 +1,57 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { HarasContext } from '../contexts/HarasContext';
 
 const Detalhes: React.FC = () => {
-  
+  const { alimentoSelecionado: {
+    nome,
+    preco,
+    acompanhamento,
+    ingredientes,
+  } } = useContext(HarasContext);
+
   return (
     <section>
       <div>
-        <h1>Nome do Alimento</h1>
+        <h1>{ nome }</h1>
       </div>
       <div>
         <p>
           Preço:
           <span>
-            R$00,00
+            R${ preco.toFixed(2) }
           </span>
         </p>
       </div>
-      <div>
-        <ul>
-          <li>ingrediente 1</li>
-          <li>ingrediente 2</li>
-          <li>informação 1</li>
-        </ul>
-      </div>
+      { ingredientes.length > 0 && (
+        <div>
+          <h2>Ingredientes</h2>
+          <ul>
+            {
+              ingredientes.map((ingrediente) => (
+                <li key={ingrediente}>{ ingrediente }</li>
+              ))
+            }
+          </ul>
+        </div>
+      ) }
+      { acompanhamento.length > 0 && (
+        <div>
+          <h2>Acompanha</h2>
+          <ul>
+            {
+              acompanhamento.map((alimento) => (
+                <li key={alimento}>{ alimento }</li>
+              ))
+            }
+          </ul>
+        </div>
+      )}
+      <button>
+        Adicionar
+      </button>
+      <button>
+        Voltar
+      </button>
     </section>
   );
 };

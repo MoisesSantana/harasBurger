@@ -1,10 +1,27 @@
-export const alimentos = [
+interface AlimentosValue {
+  tipo: string;
+  lista: Array<{
+    nome: string,
+    preco: number,
+    acompanhamento: Array<string>,
+    ingredientes: Array<string>,
+  }>;
+};
+
+interface FiltrosValue {
+  nome: string;
+  tags: Array<string>;
+};
+
+export const alimentos: Array<AlimentosValue> = [
   {
     tipo: 'Promoções',
     lista: [
       {
         nome: 'Hamburguer em Dobro',
         preco: 13,
+        acompanhamento: [],
+        ingredientes: [],
       },
     ],
   },
@@ -173,6 +190,7 @@ export const alimentos = [
       {
         nome: 'Simples',
         preco: 6,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           'carne',
@@ -186,6 +204,7 @@ export const alimentos = [
       {
         nome: 'Talentos',
         preco: 7,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           'carne',
@@ -202,6 +221,7 @@ export const alimentos = [
       {
         nome: 'Ambicioso',
         preco: 11,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '2 carnes',
@@ -218,6 +238,7 @@ export const alimentos = [
       {
         nome: 'Zorro',
         preco: 10,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           'peito de frango',
@@ -233,6 +254,7 @@ export const alimentos = [
       {
         nome: 'Elegante',
         preco: 13,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '3 carnes',
@@ -248,6 +270,7 @@ export const alimentos = [
       {
         nome: 'Impetuoso',
         preco: 12,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '2 peitos de frango',
@@ -263,6 +286,7 @@ export const alimentos = [
       {
         nome: 'Cavalo de Troia',
         preco: 15,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '4 carnes',
@@ -279,6 +303,7 @@ export const alimentos = [
       {
         nome: 'Pegasus',
         preco: 15,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '3 peitos de frango',
@@ -295,6 +320,7 @@ export const alimentos = [
       {
         nome: 'Guloso',
         preco: 10,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '3 carnes',
@@ -306,6 +332,7 @@ export const alimentos = [
       {
         nome: 'Touro Bandido',
         preco: 14,
+        acompanhamento: [],
         ingredientes: [
           'pão',
           '5 carnes',
@@ -322,14 +349,32 @@ export const alimentos = [
       {
         nome: 'Porção pequena',
         preco: 10,
+        acompanhamento: [],
+        ingredientes: [
+          'batata',
+          'calabresa',
+          'cheddar',
+        ],
       },
       {
         nome: 'Porção média',
         preco: 15,
+        acompanhamento: [],
+        ingredientes: [
+          'batata',
+          'calabresa',
+          'cheddar',
+        ],
       },
       {
         nome: 'Porção grande',
         preco: 20,
+        acompanhamento: [],
+        ingredientes: [
+          'batata',
+          'calabresa',
+          'cheddar',
+        ],
       },
     ],
   },
@@ -339,28 +384,32 @@ export const alimentos = [
       {
         nome: 'Guaraná Antarctica 1L',
         preco: 6,
-        tags: ['Bebidas'],
+        acompanhamento: [],
+        ingredientes: [],
       },
       {
         nome: 'Guaracamp',
         preco: 2,
-        tags: ['Bebidas'],
+        acompanhamento: [],
+        ingredientes: [],
       },
       {
         nome: 'Coca-Cola 1,5L',
         preco: 7,
-        tags: ['Bebidas'],
+        acompanhamento: [],
+        ingredientes: [],
       },
       {
         nome: 'Coca-Cola lata 350ml',
         preco: 5,
-        tags: ['Bebidas'],
+        acompanhamento: [],
+        ingredientes: [],
       },
     ],
   },
 ];
 
-export const filtros = [
+export const filtros: Array<FiltrosValue> = [
   {
     nome: 'Todos',
     tags: ['Sanduíche', 'Trios', 'Porções', 'Bebidas', 'Promoções'],
