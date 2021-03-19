@@ -9,6 +9,7 @@ export const CardapioContainer = style.section`
   flex-direction: column;
   gap: 50px;
   padding: 20px;
+  padding-bottom: 50px;
   width: 85%;
 
   h2 {
