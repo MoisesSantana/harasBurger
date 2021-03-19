@@ -27,7 +27,7 @@ const Detalhes: React.FC = () => {
           <h2>Ingredientes</h2>
           <ul>
             {
-              ingredientes.map((ingrediente) => (
+              ingredientes.map((ingrediente: string) => (
                 <li key={ingrediente}>{ ingrediente }</li>
               ))
             }
@@ -39,7 +39,7 @@ const Detalhes: React.FC = () => {
           <h2>Acompanha</h2>
           <ul>
             {
-              acompanhamento.map((alimento) => (
+              acompanhamento.map((alimento: string) => (
                 <li key={alimento}>{ alimento }</li>
               ))
             }

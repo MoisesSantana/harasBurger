@@ -19,7 +19,7 @@ interface HarasContextProps {
   setFiltroAtual: Dispatch<SetStateAction<string>>;
   detalheAtivado: boolean;
   lidaComDetalhes: (objeto: DetalhesParams) => void;
-  alimentoSelecionado: DetalhesParams;
+  alimentoSelecionado: (DetalhesParams);
 };
 
 interface HarasProviderProps {
@@ -31,7 +31,7 @@ export const HarasContext = createContext({} as HarasContextProps);
 export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
   const [filtroAtual, setFiltroAtual] = useState(filtros[0].nome);
   const [detalheAtivado, setDetalheAtivado] = useState(false);
-  const [alimentoSelecionado, setAlimentoSelecionado] = useState({});
+  const [alimentoSelecionado, setAlimentoSelecionado] = useState({} as DetalhesParams);
 
   const lidaComDetalhes = (objeto: DetalhesParams) => {
     setDetalheAtivado(!detalheAtivado);
