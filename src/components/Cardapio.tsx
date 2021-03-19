@@ -12,182 +12,38 @@ const Cardapio: React.FC = () => {
   const { nome, tags } = cardapioFiltrado;
   
   return (
-    <div>
+    <CardapioContainer>
       {
-        alimentos.map(({ tipo, lista }) => {
-          return (            
-            tags.includes(tipo) && <div>
-              <h2>{ tipo }</h2>
-              {
-                lista.map(({ nome, preco }) => (
+        alimentos.map(({ tipo, lista }) => (            
+          tags.includes(tipo) && <div key={ tipo }>
+            <h2>{ tipo }</h2>
+            {
+              lista.map(({ nome, preco }) => (
+                <ElementoContainer key={ nome }>
                   <div>
-                    <div>
-                      <p>{ nome }</p>
-                      <span>{`R$${preco.toFixed(2)}`}</span>
-                    </div>
-                    <div>
-                      <button
-                      type="button"
-                      >
-                        Adicionar
-                      </button>
-                      <button
-                        type="button"
-                      >
-                        Detalhes
-                      </button>
-                    </div>
+                    <p>{ nome }</p>
+                    <span>{`R$${preco.toFixed(2)}`}</span>
                   </div>
-                ))
-              }
+                  <div>
+                    <button
+                    type="button"
+                    >
+                      Adicionar
+                    </button>
+                    <button
+                      type="button"
+                    >
+                      Detalhes
+                    </button>
+                  </div>
+                </ElementoContainer>
+              ))
+            }
             </div>
-          )
-        })
+        ))
       }
-    </div>
+    </CardapioContainer>
   );
-
-
-
-
-
-
-
-
-
-
-
-
-  // return (
-  //   <CardapioContainer>
-  //     <div>
-  //       <h2>Promoções</h2>
-  //       {
-  //         promocoes.map(({ nome, preco }) => (
-  //           <ElementoContainer key={nome}>
-  //             <div>
-  //               <p>{ nome }</p>
-  //               <span>{`R$${preco.toFixed(2)}`}</span>
-  //             </div>
-  //             <div>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Adicionar
-  //               </button>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Detalhes
-  //               </button>
-  //             </div>
-  //           </ElementoContainer>
-  //         ))
-  //       }
-  //     </div>
-  //     <div>
-  //       <h2>Trios</h2>
-  //       {
-  //         trios.map(({ nome, preco }) => (
-  //           <ElementoContainer key={nome}>
-  //             <div>
-  //               <p>{ nome }</p>
-  //               <span>{`R$${preco.toFixed(2)}`}</span>
-  //             </div>
-  //             <div>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Adicionar
-  //               </button>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Detalhes
-  //               </button>
-  //             </div>
-  //           </ElementoContainer>
-  //         ))
-  //       }
-  //     </div>
-  //     <div>
-  //       <h2>Sanduíches</h2>
-  //       {
-  //         sanduiches.map(({ nome, preco }) => (
-  //           <ElementoContainer key={nome}>
-  //             <div>
-  //               <p>{ nome }</p>
-  //               <span>{`R$${preco.toFixed(2)}`}</span>
-  //             </div>
-  //             <div>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Adicionar
-  //               </button>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Detalhes
-  //               </button>
-  //             </div>
-  //           </ElementoContainer>
-  //         ))
-  //       }
-  //     </div>
-  //     <div>
-  //       <h2>Bebidas</h2>
-  //       {
-  //         bebidas.map(({ nome, preco }) => (
-  //           <ElementoContainer key={nome}>
-  //             <div>
-  //               <p>{ nome }</p>
-  //               <span>{`R$${preco.toFixed(2)}`}</span>
-  //             </div>
-  //             <div>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Adicionar
-  //               </button>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Detalhes
-  //               </button>
-  //             </div>
-  //           </ElementoContainer>
-  //         ))
-  //       }
-  //     </div>
-  //     <div>
-  //       <h2>Porções</h2>
-  //       {
-  //         porcao.map(({ nome, preco }) => (
-  //           <ElementoContainer key={nome}>
-  //             <div>
-  //               <p>{ nome }</p>
-  //               <span>{`R$${preco.toFixed(2)}`}</span>
-  //             </div>
-  //             <div>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Adicionar
-  //               </button>
-  //               <button
-  //                 type="button"
-  //               >
-  //                 Detalhes
-  //               </button>
-  //             </div>
-  //           </ElementoContainer>
-  //         ))
-  //       }
-  //     </div>
-  //   </CardapioContainer>
-  // );
 } 
-
 
 export default Cardapio;
