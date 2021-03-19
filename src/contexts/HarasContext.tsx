@@ -1,10 +1,15 @@
 import React, {
   createContext,
   ReactNode,
+  Dispatch,
+  SetStateAction,
+  useState,
 } from 'react';
+import { filtros } from '../data/listaDeAlimentos';
 
 interface HarasContextProps {
-  passarValue: string;
+  filtroAtual: string;
+  setFiltroAtual: Dispatch<SetStateAction<string>>;
 }
 
 interface HarasProviderProps {
@@ -14,10 +19,13 @@ interface HarasProviderProps {
 export const HarasContext = createContext({} as HarasContextProps);
 
 export function HarasProvider({ children }: HarasProviderProps) {
-  const passarValue = 'qualquercoisa';
+  const [filtroAtual, setFiltroAtual] = useState(filtros[0].nome);
 
   return (
-    <HarasContext.Provider value={ { passarValue } }>
+    <HarasContext.Provider value={ {
+      filtroAtual,
+      setFiltroAtual,
+    } }>
       { children }
     </HarasContext.Provider>
   );
