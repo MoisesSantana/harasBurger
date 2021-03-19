@@ -10,7 +10,7 @@ const Filtro: React.FC = () => {
     <FiltroContainer
       name="filtra-categoria"
       id="filtra-categoria"
-      onChange={ ({ target: { value } }) => setFiltroAtual(value) }
+      onChange={({ target: { value } }) => setFiltroAtual(value)}
     >
       {
         filtros.map(({ nome }) => (
@@ -24,7 +24,6 @@ const Filtro: React.FC = () => {
       }
     </FiltroContainer>
   );
-}
-
+};
 
 export default Filtro;

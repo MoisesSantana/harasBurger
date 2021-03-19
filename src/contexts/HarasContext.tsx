@@ -18,15 +18,16 @@ interface HarasProviderProps {
 
 export const HarasContext = createContext({} as HarasContextProps);
 
-export function HarasProvider({ children }: HarasProviderProps) {
+export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
   const [filtroAtual, setFiltroAtual] = useState(filtros[0].nome);
 
   return (
-    <HarasContext.Provider value={ {
+    <HarasContext.Provider value={{
       filtroAtual,
       setFiltroAtual,
-    } }>
+    }}
+    >
       { children }
     </HarasContext.Provider>
   );
-}
+};
