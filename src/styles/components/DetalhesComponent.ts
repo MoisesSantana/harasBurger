@@ -21,4 +21,45 @@ export const DetalheContainer = style.section`
   position: relative;
   text-align: center;
   width: 100%;
+
+  h1 {
+    background-color: #22120E;
+    font-size: 1.8rem;
+  }
+
+  .precoParagraph {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 800;
+    gap: 20px;
+    justify-content: center;
+
+    span {
+      color: green;
+    }
+  }
+
+  h2 {
+    background-color: #22120E;
+    font-size: 1rem;
+  }
+
+  button {
+    border: none;
+    color: #FAFFEB;
+    font-weight: 800;
+    padding: 10px 30px;
+    margin-top: 15px;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  button:first-child {
+    background-color: #27AE60;
+    border-radius: 10px 0 0 0;
+  }
+
+  button:last-child {
+    background-color: #F77800;
+    border-radius: 0 0 10px 0;
+  }
 `;

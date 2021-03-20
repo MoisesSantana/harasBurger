@@ -82,7 +82,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
-          'peito de frango',
+          'filé de frango',
           'queijo',
           'presunto',
           'bacon',
@@ -114,7 +114,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
-          '2 peitos de frango',
+          '2 filés de frango',
           'queijo',
           'presunto',
           'bacon',
@@ -147,7 +147,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
-          '3 peitos de frango',
+          '3 filés de frango',
           'queijo',
           'presunto',
           'bacon',
@@ -241,7 +241,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: [],
         ingredientes: [
           'pão',
-          'peito de frango',
+          'filé de frango',
           'queijo',
           'presunto',
           'bacon',
@@ -273,7 +273,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: [],
         ingredientes: [
           'pão',
-          '2 peitos de frango',
+          '2 filés de frango',
           'queijo',
           'presunto',
           'bacon',
@@ -306,7 +306,7 @@ export const alimentos: Array<AlimentosValue> = [
         acompanhamento: [],
         ingredientes: [
           'pão',
-          '3 peitos de frango',
+          '3 filés de frango',
           'queijo',
           'presunto',
           'bacon',
