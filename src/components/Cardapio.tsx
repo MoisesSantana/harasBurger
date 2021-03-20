@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { HarasContext } from '../contexts/HarasContext';
 import { alimentos, filtros } from '../data/listaDeAlimentos';
 import {
@@ -11,7 +11,7 @@ const Cardapio: React.FC = () => {
   const {
     filtroAtual,
     detalheAtivado,
-    lidaComDetalhes
+    lidaComDetalhes,
   } = useContext(HarasContext);
 
   const cardapioFiltrado = filtros.filter(({ nome }) => nome === filtroAtual)[0];
@@ -40,7 +40,7 @@ const Cardapio: React.FC = () => {
                       </button>
                       <button
                         type="button"
-                        onClick={ () => lidaComDetalhes(objeto) }
+                        onClick={() => lidaComDetalhes(objeto)}
                       >
                         Detalhes
                       </button>

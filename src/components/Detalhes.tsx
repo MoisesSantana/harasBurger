@@ -24,7 +24,8 @@ const Detalhes: React.FC = () => {
           <p className="precoParagraph">
             Preço:
             <span>
-              R${ preco.toFixed(2) }
+              R$
+              { preco.toFixed(2) }
             </span>
           </p>
         </div>
@@ -60,7 +61,7 @@ const Detalhes: React.FC = () => {
           </button>
           <button
             type="button"
-            onClick={ () => lidaComDetalhes(alimentoSelecionado) }
+            onClick={() => lidaComDetalhes(alimentoSelecionado)}
           >
             Voltar
           </button>

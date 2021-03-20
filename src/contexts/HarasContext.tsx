@@ -12,7 +12,7 @@ interface DetalhesParams {
   preco: number;
   acompanhamento: Array<string>;
   ingredientes: Array<string>;
-};
+}
 
 interface HarasContextProps {
   filtroAtual: string;
@@ -20,11 +20,11 @@ interface HarasContextProps {
   detalheAtivado: boolean;
   lidaComDetalhes: (objeto: DetalhesParams) => void;
   alimentoSelecionado: (DetalhesParams);
-};
+}
 
 interface HarasProviderProps {
   children: ReactNode;
-};
+}
 
 export const HarasContext = createContext({} as HarasContextProps);
 

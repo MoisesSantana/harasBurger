@@ -6,12 +6,12 @@ interface AlimentosValue {
     acompanhamento: Array<string>,
     ingredientes: Array<string>,
   }>;
-};
+}
 
 interface FiltrosValue {
   nome: string;
   tags: Array<string>;
-};
+}
 
 export const alimentos: Array<AlimentosValue> = [
   {
