@@ -9,7 +9,7 @@ import MainContainer from '../styles/pages/carrinhoPage';
 
 const Carrinho: React.FC = () => (
   <MainContainer>
-    <Header />
+    <BotaoVoltar />
     <h4>Será cobrado taxa de entrega a parte</h4>
     <Pedidos />
     <h4>
@@ -21,7 +21,6 @@ const Carrinho: React.FC = () => (
       Selecione a forma de pagamento
     </h4>
     <Pagamento />
-    <BotaoVoltar />
     <BotaoFinalizar />
   </MainContainer>
 );

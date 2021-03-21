@@ -8,6 +8,7 @@ const PagamentoContainer = style.section`
   margin: auto;
   margin-bottom: 10px;
   padding: 10px;
+  padding-bottom: 80px;
   width: 85%;
 
   div {
