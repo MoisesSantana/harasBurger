@@ -1,9 +1,45 @@
 import React from 'react';
+import EnderecoContainer from '../styles/components/EnderecoComponent';
 
 const Endereco: React.FC = () => (
-  <div>
-    oi
-  </div>
+  <EnderecoContainer>
+    <label htmlFor="rua">
+      Rua:
+      <input
+        type="text"
+        name="rua"
+        id="rua"
+        placeholder="ex: Pedro da Silva Dias"
+      />
+    </label>
+    <label htmlFor="numero">
+      Número:
+      <input
+        type="text"
+        name="numero"
+        id="numero"
+        placeholder="ex: 123"
+      />
+    </label>
+    <label htmlFor="bairro">
+      Bairro:
+      <input
+        type="text"
+        name="bairro"
+        id="bairro"
+        placeholder="ex: Cosmos"
+      />
+    </label>
+    <label htmlFor="complemento">
+      Complemento:
+      <input
+        type="text"
+        name="complemento"
+        id="complemento"
+        placeholder="ex: lote: 22, quadra: 40"
+      />
+    </label>
+  </EnderecoContainer>
 );
 
 export default Endereco;

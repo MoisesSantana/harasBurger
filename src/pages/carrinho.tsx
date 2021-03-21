@@ -12,6 +12,10 @@ const Carrinho: React.FC = () => (
     <Header />
     <h4>Será cobrado taxa de entrega a parte</h4>
     <Pedidos />
+    <h4>
+      Informe seu endereço para agilizarmos seu pedido
+      <small>&#40;&#42;opcional&#41;</small>
+    </h4>
     <Endereco />
     <Pagamento />
     <BotaoVoltar />
