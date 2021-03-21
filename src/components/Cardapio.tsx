@@ -12,6 +12,7 @@ const Cardapio: React.FC = () => {
     filtroAtual,
     detalheAtivado,
     lidaComDetalhes,
+    adicionaPedidos,
   } = useContext(HarasContext);
 
   const cardapioFiltrado = filtros.filter(({ nome }) => nome === filtroAtual)[0];
@@ -35,6 +36,7 @@ const Cardapio: React.FC = () => {
                     <div>
                       <button
                         type="button"
+                        onClick={() => adicionaPedidos(objeto)}
                       >
                         Adicionar
                       </button>
