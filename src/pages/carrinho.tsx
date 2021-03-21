@@ -17,6 +17,9 @@ const Carrinho: React.FC = () => (
       <small>&#40;&#42;opcional&#41;</small>
     </h4>
     <Endereco />
+    <h4>
+      Selecione a forma de pagamento
+    </h4>
     <Pagamento />
     <BotaoVoltar />
     <BotaoFinalizar />
