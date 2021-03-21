@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { HarasContext } from '../contexts/HarasContext';
+import PedidosContainer from '../styles/components/PedidosComponents';
 
 const Pedidos: React.FC = () => {
   const {
@@ -8,7 +9,7 @@ const Pedidos: React.FC = () => {
   } = useContext(HarasContext);
 
   return(
-    <ul>
+    <PedidosContainer>
       {
         pedidos.map((objeto, indice) => (
           <li key={`${objeto.nome}-${indice}`}>
@@ -26,7 +27,7 @@ const Pedidos: React.FC = () => {
           </li>
         ))
       }
-    </ul>
+    </PedidosContainer>
   );
 }
 
