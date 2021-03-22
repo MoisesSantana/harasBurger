@@ -17,7 +17,6 @@ const BotaoCarrinho: React.FC = () => {
       </BotaoCarrinhoContainer>
     </Link>
   );
-}
-
+};
 
 export default BotaoCarrinho;

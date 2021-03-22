@@ -1,34 +1,56 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { HarasContext } from '../contexts/HarasContext';
 import PagamentoContainer from '../styles/components/PagamentoComponent';
 
+interface LidaComMudancaProps {
+  value: string;
+  name: string;
+}
+
 const Pagamento: React.FC = () => {
-  const troco = true;
+  const { setFormaDePagamento } = useContext(HarasContext);
+
+  const [pagamento, setPagamento] = useState('');
+  const [troco, setTroco] = useState('');
+
+  const lidaComMudanca = (target: LidaComMudancaProps) => {
+    if (target.name === 'formaDePagamento') setPagamento(target.value);
+    else setTroco(target.value);
+
+    setFormaDePagamento({ forma: pagamento, troco });
+  };
+
   return (
     <PagamentoContainer>
       <div>
-
-        <input
-          type="radio"
-          name="formaDePagamento"
-          id="dinheiro"
-        />
         <label htmlFor="dinheiro">
+          <input
+            type="radio"
+            name="formaDePagamento"
+            id="dinheiro"
+            value="dinheiro"
+            onChange={({ target }) => lidaComMudanca(target)}
+          />
           Dinheiro
         </label>
-        <input
-          type="radio"
-          name="formaDePagamento"
-          id="debito"
-        />
         <label htmlFor="debito">
+          <input
+            type="radio"
+            name="formaDePagamento"
+            id="debito"
+            value="debito"
+            onChange={({ target }) => lidaComMudanca(target)}
+          />
           Débito
         </label>
-        <input
-          type="radio"
-          name="formaDePagamento"
-          id="credito"
-        />
         <label htmlFor="credito">
+          <input
+            type="radio"
+            name="formaDePagamento"
+            id="credito"
+            value="credito"
+            onChange={({ target }) => lidaComMudanca(target)}
+          />
           Crédito
         </label>
       </div>
@@ -45,6 +67,6 @@ const Pagamento: React.FC = () => {
       </label>
     </PagamentoContainer>
   );
-}
+};
 
 export default Pagamento;

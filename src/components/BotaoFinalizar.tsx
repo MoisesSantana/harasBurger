@@ -16,7 +16,6 @@ const BotaoFinalizar: React.FC = () => {
       </BotaoFinalizarContainer>
     </Link>
   );
-}
-
+};
 
 export default BotaoFinalizar;

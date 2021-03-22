@@ -14,6 +14,18 @@ interface DetalhesParams {
   ingredientes: Array<string>;
 }
 
+interface EnderecoState {
+  rua: string;
+  numero: string;
+  bairro: string;
+  complemento: string;
+}
+
+interface FormaDePagamentoState {
+  forma: string;
+  troco: string;
+}
+
 interface HarasContextProps {
   filtroAtual: string;
   setFiltroAtual: Dispatch<SetStateAction<string>>;
@@ -26,6 +38,8 @@ interface HarasContextProps {
   renderizaPedidoFeito: boolean;
   setRenderizaPedidoFeito: Dispatch<SetStateAction<boolean>>;
   valorTotal: number;
+  setEnderecoCompleto: Dispatch<SetStateAction<EnderecoState>>;
+  setFormaDePagamento: Dispatch<SetStateAction<FormaDePagamentoState>>;
 }
 
 interface HarasProviderProps {
@@ -41,6 +55,8 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
   const [alimentoSelecionado, setAlimentoSelecionado] = useState({} as DetalhesParams);
   const [pedidos, setPedidos] = useState([] as Array<DetalhesParams>);
   const [valorTotal, setValorTotal] = useState(0);
+  const [enderecoCompleto, setEnderecoCompleto] = useState({} as EnderecoState);
+  const [formaDePagamento, setFormaDePagamento] = useState({} as FormaDePagamentoState);
 
   const lidaComDetalhes = (objeto: DetalhesParams) => {
     setDetalheAtivado(!detalheAtivado);
@@ -51,7 +67,7 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
     pedidos.push(objeto);
     setValorTotal(valorTotal + objeto.preco);
 
-    detalheAtivado && setDetalheAtivado(!detalheAtivado);  
+    detalheAtivado && setDetalheAtivado(!detalheAtivado);
     setRenderizaPedidoFeito(!renderizaPedidoFeito);
     setTimeout(() => {
       setRenderizaPedidoFeito(false);
@@ -80,6 +96,8 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
       renderizaPedidoFeito,
       setRenderizaPedidoFeito,
       valorTotal,
+      setEnderecoCompleto,
+      setFormaDePagamento,
     }}
     >
       { children }

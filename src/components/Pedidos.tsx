@@ -8,7 +8,7 @@ const Pedidos: React.FC = () => {
     removePedidos,
   } = useContext(HarasContext);
 
-  return(
+  return (
     <PedidosContainer>
       { pedidos.length < 1 && <h3>Nenhum pedido registrado</h3> }
       {
@@ -30,6 +30,6 @@ const Pedidos: React.FC = () => {
       }
     </PedidosContainer>
   );
-}
+};
 
 export default Pedidos;

@@ -61,7 +61,6 @@ const Detalhes: React.FC = () => {
           <button
             type="button"
             onClick={() => adicionaPedidos(alimentoSelecionado)}
-            
           >
             Adicionar
           </button>
