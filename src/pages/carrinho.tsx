@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
 import Pedidos from '../components/Pedidos';
 import Endereco from '../components/Endereco';
 import Pagamento from '../components/Pagamento';
@@ -13,8 +12,7 @@ const Carrinho: React.FC = () => (
     <h4>Será cobrado taxa de entrega a parte</h4>
     <Pedidos />
     <h4>
-      Informe seu endereço para agilizarmos seu pedido
-      <small>&#40;&#42;opcional&#41;</small>
+      Informe seu endereço
     </h4>
     <Endereco />
     <h4>

@@ -5,12 +5,10 @@ import {
   CardapioContainer,
   ElementoContainer,
 } from '../styles/components/CardapioComponent';
-import Detalhes from './Detalhes';
 
 const Cardapio: React.FC = () => {
   const {
     filtroAtual,
-    detalheAtivado,
     lidaComDetalhes,
     adicionaPedidos,
   } = useContext(HarasContext);
@@ -20,7 +18,6 @@ const Cardapio: React.FC = () => {
 
   return (
     <CardapioContainer>
-      { detalheAtivado && <Detalhes />}
       {
         alimentos.map(({ tipo, lista }) => (
           tags.includes(tipo) && (

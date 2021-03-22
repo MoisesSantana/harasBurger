@@ -10,6 +10,7 @@ const Pedidos: React.FC = () => {
 
   return(
     <PedidosContainer>
+      { pedidos.length < 1 && <h3>Nenhum pedido registrado</h3> }
       {
         pedidos.map((objeto, indice) => (
           <li key={`${objeto.nome}-${indice}`}>

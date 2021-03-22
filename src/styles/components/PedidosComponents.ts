@@ -10,6 +10,11 @@ const PedidosContainer = style.ul`
   margin-bottom: 10px;
   width: 80vw;
 
+  h3 {
+    text-align: center;
+    width: 100%;
+  }
+
   li {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;

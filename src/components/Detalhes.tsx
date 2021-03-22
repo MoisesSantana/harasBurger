@@ -6,7 +6,11 @@ import {
 } from '../styles/components/DetalhesComponent';
 
 const Detalhes: React.FC = () => {
-  const { lidaComDetalhes, alimentoSelecionado } = useContext(HarasContext);
+  const {
+    lidaComDetalhes,
+    alimentoSelecionado,
+    adicionaPedidos,
+  } = useContext(HarasContext);
   const {
     nome,
     preco,
@@ -56,6 +60,8 @@ const Detalhes: React.FC = () => {
         <div>
           <button
             type="button"
+            onClick={() => adicionaPedidos(alimentoSelecionado)}
+            
           >
             Adicionar
           </button>

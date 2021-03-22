@@ -23,6 +23,8 @@ interface HarasContextProps {
   adicionaPedidos: (objeto: DetalhesParams) => void;
   pedidos: Array<DetalhesParams>;
   removePedidos: (objeto: DetalhesParams) => void;
+  renderizaPedidoFeito: boolean;
+  setRenderizaPedidoFeito: Dispatch<SetStateAction<boolean>>;
 }
 
 interface HarasProviderProps {
@@ -34,6 +36,7 @@ export const HarasContext = createContext({} as HarasContextProps);
 export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
   const [filtroAtual, setFiltroAtual] = useState(filtros[0].nome);
   const [detalheAtivado, setDetalheAtivado] = useState(false);
+  const [renderizaPedidoFeito, setRenderizaPedidoFeito] = useState(false);
   const [alimentoSelecionado, setAlimentoSelecionado] = useState({} as DetalhesParams);
   const [pedidos, setPedidos] = useState([] as Array<DetalhesParams>);
 
@@ -43,7 +46,12 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
   };
 
   const adicionaPedidos = (objeto: DetalhesParams) => {
-    pedidos.push(objeto)
+    detalheAtivado && setDetalheAtivado(!detalheAtivado);
+    pedidos.push(objeto);
+    setRenderizaPedidoFeito(!renderizaPedidoFeito);
+    setTimeout(() => {
+      setRenderizaPedidoFeito(false);
+    }, 1000);
   };
 
   const removePedidos = (objeto: DetalhesParams) => {
@@ -63,6 +71,8 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
       adicionaPedidos,
       pedidos,
       removePedidos,
+      renderizaPedidoFeito,
+      setRenderizaPedidoFeito,
     }}
     >
       { children }

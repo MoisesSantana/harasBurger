@@ -10,6 +10,7 @@ const Endereco: React.FC = () => (
         name="rua"
         id="rua"
         placeholder="ex: Pedro da Silva Dias"
+        required
       />
     </label>
     <label htmlFor="numero">
@@ -19,6 +20,7 @@ const Endereco: React.FC = () => (
         name="numero"
         id="numero"
         placeholder="ex: 123"
+        required
       />
     </label>
     <label htmlFor="bairro">
@@ -28,6 +30,7 @@ const Endereco: React.FC = () => (
         name="bairro"
         id="bairro"
         placeholder="ex: Cosmos"
+        required
       />
     </label>
     <label htmlFor="complemento">
