@@ -6,8 +6,10 @@ const BotaoCarrinhoContainer = style.a`
   border: none;
   box-shadow: 0 -10px 20px black;
   color: #FAFFEB;
+  display: flex;
   font-family: sans-serif;
   font-weight: 600;
+  justify-content: space-around;
   padding: 15px;
   position: fixed;
   text-shadow: 1px 1px 3px black;
