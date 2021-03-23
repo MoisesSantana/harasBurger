@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { HarasContext } from '../contexts/HarasContext';
 import EnderecoContainer from '../styles/components/EnderecoComponent';
 
@@ -15,6 +15,15 @@ const Endereco: React.FC = () => {
 
   const { setEnderecoCompleto } = useContext(HarasContext);
 
+  useEffect(() => {
+    setEnderecoCompleto({
+      rua: valorRua,
+      numero: valorNumero,
+      bairro: valorBairro,
+      complemento: valorComplemento,
+    });
+  }, [valorRua, valorNumero, valorBairro, valorComplemento]);
+
   const lidaComMudanca = (target: LidaComMudancaProps) => {
     if (target.name === 'rua' && target.name.trim() !== '') {
       setValorRua(target.value);
@@ -27,14 +36,7 @@ const Endereco: React.FC = () => {
     }
     if (target.name === 'complemento' && target.name.trim() !== '') {
       setValorComplemento(target.value);
-    }
-
-    setEnderecoCompleto({
-      rua: valorRua,
-      numero: valorNumero,
-      bairro: valorBairro,
-      complemento: valorComplemento,
-    });
+    } else setValorComplemento('Sem Complemento');
   };
 
   return (

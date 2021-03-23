@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { HarasContext } from '../contexts/HarasContext';
 import PagamentoContainer from '../styles/components/PagamentoComponent';
 
@@ -13,11 +13,16 @@ const Pagamento: React.FC = () => {
   const [pagamento, setPagamento] = useState('');
   const [troco, setTroco] = useState('');
 
+  useEffect(() => {
+    setFormaDePagamento({ forma: pagamento, troco });
+  }, [pagamento, troco]);
+
   const lidaComMudanca = (target: LidaComMudancaProps) => {
     if (target.name === 'formaDePagamento') setPagamento(target.value);
-    else setTroco(target.value);
-
-    setFormaDePagamento({ forma: pagamento, troco });
+    else {
+      if (target.value === undefined || target.value.trim() === '') setTroco('Sem troco');
+      setTroco(target.value);
+    }
   };
 
   return (
@@ -63,6 +68,7 @@ const Pagamento: React.FC = () => {
           type="text"
           name="troco"
           id="troco"
+          onChange={({ target }) => lidaComMudanca(target)}
         />
       </label>
     </PagamentoContainer>

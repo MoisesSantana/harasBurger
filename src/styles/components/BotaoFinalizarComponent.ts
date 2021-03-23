@@ -15,6 +15,7 @@ const BotaoFinalizarContainer = style.a`
   text-shadow: 1px 1px 3px black;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   width: 100%;
 `;
 

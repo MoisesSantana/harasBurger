@@ -40,6 +40,8 @@ interface HarasContextProps {
   valorTotal: number;
   setEnderecoCompleto: Dispatch<SetStateAction<EnderecoState>>;
   setFormaDePagamento: Dispatch<SetStateAction<FormaDePagamentoState>>;
+  enderecoCompleto: EnderecoState;
+  formaDePagamento: FormaDePagamentoState;
 }
 
 interface HarasProviderProps {
@@ -49,13 +51,20 @@ interface HarasProviderProps {
 export const HarasContext = createContext({} as HarasContextProps);
 
 export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
+  const ENDERECO_INICIAL = {
+    rua: '',
+    numero: '',
+    bairro: '',
+    complemento: '',
+  };
+
   const [filtroAtual, setFiltroAtual] = useState(filtros[0].nome);
   const [detalheAtivado, setDetalheAtivado] = useState(false);
   const [renderizaPedidoFeito, setRenderizaPedidoFeito] = useState(false);
   const [alimentoSelecionado, setAlimentoSelecionado] = useState({} as DetalhesParams);
   const [pedidos, setPedidos] = useState([] as Array<DetalhesParams>);
   const [valorTotal, setValorTotal] = useState(0);
-  const [enderecoCompleto, setEnderecoCompleto] = useState({} as EnderecoState);
+  const [enderecoCompleto, setEnderecoCompleto] = useState(ENDERECO_INICIAL as EnderecoState);
   const [formaDePagamento, setFormaDePagamento] = useState({} as FormaDePagamentoState);
 
   const lidaComDetalhes = (objeto: DetalhesParams) => {
@@ -67,7 +76,7 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
     pedidos.push(objeto);
     setValorTotal(valorTotal + objeto.preco);
 
-    detalheAtivado && setDetalheAtivado(!detalheAtivado);
+    if (detalheAtivado) setDetalheAtivado(!detalheAtivado);
     setRenderizaPedidoFeito(!renderizaPedidoFeito);
     setTimeout(() => {
       setRenderizaPedidoFeito(false);
@@ -98,6 +107,8 @@ export const HarasProvider: React.FC = ({ children }: HarasProviderProps) => {
       valorTotal,
       setEnderecoCompleto,
       setFormaDePagamento,
+      enderecoCompleto,
+      formaDePagamento,
     }}
     >
       { children }
