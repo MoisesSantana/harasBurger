@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import HeaderContainer from '../styles/components/headerComponent';
+import HeaderContainer from '../styles/components/HeaderComponent';
 
 const Header: React.FC = () => (
   <HeaderContainer>

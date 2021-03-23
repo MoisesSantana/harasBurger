@@ -50,6 +50,7 @@ export default class MyDocument extends Document {
             rel="shortcut icon"
             href="./images/harasBurger-fav.ico"
           />
+          <title>Hara&apos;s Burger</title>
         </Head>
         <body>
           <Main />

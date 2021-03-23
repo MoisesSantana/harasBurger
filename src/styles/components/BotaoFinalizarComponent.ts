@@ -1,6 +1,6 @@
 import style from 'styled-components';
 
-const BotaoCarrinhoContainer = style.a`
+const BotaoFinalizarContainer = style.a`
   background-color: #4CD137;
   bottom: 0;
   border: none;
@@ -15,7 +15,8 @@ const BotaoCarrinhoContainer = style.a`
   text-shadow: 1px 1px 3px black;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   width: 100%;
 `;
 
-export default BotaoCarrinhoContainer;
+export default BotaoFinalizarContainer;

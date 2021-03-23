@@ -1,17 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { HarasContext } from '../contexts/HarasContext';
 import { alimentos, filtros } from '../data/listaDeAlimentos';
 import {
   CardapioContainer,
   ElementoContainer,
 } from '../styles/components/CardapioComponent';
-import Detalhes from './Detalhes';
 
 const Cardapio: React.FC = () => {
   const {
     filtroAtual,
-    detalheAtivado,
-    lidaComDetalhes
+    lidaComDetalhes,
+    adicionaPedidos,
   } = useContext(HarasContext);
 
   const cardapioFiltrado = filtros.filter(({ nome }) => nome === filtroAtual)[0];
@@ -19,7 +18,6 @@ const Cardapio: React.FC = () => {
 
   return (
     <CardapioContainer>
-      { detalheAtivado && <Detalhes />}
       {
         alimentos.map(({ tipo, lista }) => (
           tags.includes(tipo) && (
@@ -35,12 +33,13 @@ const Cardapio: React.FC = () => {
                     <div>
                       <button
                         type="button"
+                        onClick={() => adicionaPedidos(objeto)}
                       >
                         Adicionar
                       </button>
                       <button
                         type="button"
-                        onClick={ () => lidaComDetalhes(objeto) }
+                        onClick={() => lidaComDetalhes(objeto)}
                       >
                         Detalhes
                       </button>
