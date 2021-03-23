@@ -37,6 +37,8 @@ const BotaoFinalizar: React.FC = () => {
         formaDePagamento,
         valorTotal,
       )}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <span>Fazer pedido</span>
       <span>
