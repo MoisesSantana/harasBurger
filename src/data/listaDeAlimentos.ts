@@ -172,7 +172,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Touro Bandido',
-        preco: 21,
+        preco: 100000,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
