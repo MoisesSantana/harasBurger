@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Logo Haras Burger](./public/harasBurger-logo.jpg)
 
-## Getting Started
+# Haras Burger
 
-First, run the development server:
+Hara's Burger é uma lanchonete da zona oeste do RJ capital, com foco em delivery de hamburgers, mas com loja física e com um cardápio com variedades. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## O projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto é uma aplicação web responsiva, o objeto da aplicação é dar ao usuário uma boa experiência com usabilidade fácil e permitir conversas rápidas pelo whatsapp, com um pedido bem detalhado contendo endereço, forma de pagamento, pedido e valor, assim permitindo o/a atendente responder todos clientes de forma rápida, sem que o/a cliente precise esperar muito tempo para ser respondido(a).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Imagens
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### Mobile
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![pagina inicial](./public/images/aplicacaoMobileHomePage.png)
 
-## Learn More
+![detalhes](./public/images/aplicacaoMobileDetalhes.png)
 
-To learn more about Next.js, take a look at the following resources:
+![pagina carrinho](./public/images/aplicacaoMobileCarrinhoPage.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Desktop
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![pagina inicial](./public/images/aplicacaoDesktopHomePage.png)
 
-## Deploy on Vercel
+![pagina carrinho](./public/images/aplicacaoDesktopCarrinhoPage.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tecnologias utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Nextjs
+* Styled Components
+* React Hooks
+* Context API
+* Type Script
+
+### Acesso a aplicação
+##### Atenção
+> Por favor não enviar pedidos, Hara's Burger é uma lanchonete real.
+
+[Link em breve]
