@@ -7,11 +7,12 @@ export const CardapioContainer = style.section`
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
   gap: 50px;
+  height: auto;
   padding: 20px;
   padding-bottom: 50px;
   width: 85%;
+  -webkit-flex-direction: column;
 
   h2 {
     text-transform: uppercase;

@@ -3,6 +3,7 @@ import style from 'styled-components';
 const HeaderContainer = style.header`
   align-items: center;
   display: flex;
+  height: auto;
   justify-content: space-around;
   margin-bottom: 10px;
   width: 100%;
