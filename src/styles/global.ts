@@ -10,6 +10,7 @@ export default createGlobalStyle`
   body {
     background-color: #723022;
     color: #FAFFEB;
+    -webkit-text-size-adjust: none;
     font-family: 'Poppins', sans-serif;
   }
 `;

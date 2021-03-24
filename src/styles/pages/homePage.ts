@@ -14,6 +14,7 @@ const MainContainer = style.main`
   animation: 0.2s ${correrATela} ease-out;
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   height: 100vh;
   width: 100%;
 `;
