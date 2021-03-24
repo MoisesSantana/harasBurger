@@ -30,7 +30,7 @@ export const alimentos: Array<AlimentosValue> = [
     lista: [
       {
         nome: 'Simples',
-        preco: 6,
+        preco: 13,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -44,7 +44,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Talentos',
-        preco: 7,
+        preco: 14,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -61,7 +61,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Ambicioso',
-        preco: 11,
+        preco: 18,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -78,7 +78,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Zorro',
-        preco: 10,
+        preco: 17,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -94,7 +94,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Elegante',
-        preco: 13,
+        preco: 20,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -110,7 +110,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Impetuoso',
-        preco: 12,
+        preco: 19,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -126,7 +126,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Cavalo de Troia',
-        preco: 15,
+        preco: 22,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -143,7 +143,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Pegasus',
-        preco: 15,
+        preco: 22,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -160,7 +160,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Guloso',
-        preco: 10,
+        preco: 17,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
@@ -172,7 +172,7 @@ export const alimentos: Array<AlimentosValue> = [
       },
       {
         nome: 'Touro Bandido',
-        preco: 14,
+        preco: 21,
         acompanhamento: ['Guaracamp', 'Batata'],
         ingredientes: [
           'pão',
