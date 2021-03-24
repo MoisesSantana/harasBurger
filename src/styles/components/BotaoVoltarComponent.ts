@@ -5,7 +5,7 @@ const BotaoVoltarContainer = style.header`
   display: flex;
   justify-content: space-around;
   margin-bottom: 10px;
-  width: 100vw;
+  width: 100%;
 
   img {
     border-radius: 50%;

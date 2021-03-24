@@ -57,4 +57,24 @@ export const ElementoContainer = style.div`
     background-color: #F77800;
     border-radius: 0 0 10px 0;
   }
+
+  @media(min-width: 768px) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+
+    button {
+      cursor: pointer;
+      width: 35%;
+    }
+
+    button:first-child {
+      border-radius: 5px;
+    }
+
+    button:last-child {
+      border-radius: 5px;
+    }
+  }
 `;

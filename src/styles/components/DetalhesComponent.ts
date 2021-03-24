@@ -62,4 +62,10 @@ export const DetalheContainer = style.section`
     background-color: #F77800;
     border-radius: 0 0 10px 0;
   }
+
+  @media(min-width: 768px) {
+    button {
+      cursor: pointer;
+    }
+  }
 `;
