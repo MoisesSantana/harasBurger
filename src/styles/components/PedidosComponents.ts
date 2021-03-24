@@ -39,6 +39,28 @@ const PedidosContainer = style.ul`
     height: 30px;
     text-transform: uppercase;
   }
+
+  @media(min-width: 768px) {
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 5rem;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+      }
+
+      button {
+        cursor: pointer;
+        width: 45%;
+      }
+    }
+  }
 `;
 
 export default PedidosContainer;

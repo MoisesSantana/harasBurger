@@ -17,6 +17,14 @@ const BotaoFinalizarContainer = style.a`
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
+
+  @media(min-width: 768px) {
+    cursor: pointer;
+    left: 50%;
+    max-width: 800px;
+    transform: translateX(-50%);
+    width: 98%;
+  }
 `;
 
 export default BotaoFinalizarContainer;

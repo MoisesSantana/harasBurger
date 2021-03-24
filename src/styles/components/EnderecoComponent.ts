@@ -22,6 +22,16 @@ const EnderecoContainer = style.form`
       text-align: center;
     }
   }
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    label {
+      width: 45%;
+    }
+  }
 `;
 
 export default EnderecoContainer;

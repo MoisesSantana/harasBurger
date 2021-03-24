@@ -16,6 +16,13 @@ const BotaoCarrinhoContainer = style.a`
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+
+  @media(min-width: 768px) {
+    cursor: pointer;
+    
+    max-width: 800px;
+    width: 98%;
+  }
 `;
 
 export default BotaoCarrinhoContainer;

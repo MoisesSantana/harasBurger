@@ -14,11 +14,13 @@ const Pedidos: React.FC = () => {
       {
         pedidos.map((objeto, indice) => (
           <li key={`${objeto.nome}-${indice}`}>
-            {objeto.nome}
-            <span>
-              R$
-              {objeto.preco.toFixed(2)}
-            </span>
+            <div>
+              {objeto.nome}
+              <span>
+                R$
+                {objeto.preco.toFixed(2)}
+              </span>
+            </div>
             <button
               type="button"
               onClick={() => removePedidos(objeto)}
