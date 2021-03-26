@@ -15,7 +15,7 @@ const MainContainer = style.main`
   display: flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 `;
 
